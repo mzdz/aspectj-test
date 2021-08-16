@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "https://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <aspects>
+        <aspect name="io.muzhi.aspects.RuntimeAspect"/>
+    </aspects>
+    <weaver options="-verbose -showWeaveInfo">
+        <include within="io.muzhi.models.**"/>
+        <include within="io.muzhi.aspects.RuntimeAspect"/>
+    </weaver>
+</aspectj>
